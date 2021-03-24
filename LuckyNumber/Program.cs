@@ -11,9 +11,9 @@ namespace LuckyNumber
             Console.WriteLine("Test task \"Lucky ticket\".\n");
             while (true)
             {
-                Console.WriteLine("Input number with 3-8 digits to check it luck.\n");
+                Console.WriteLine("Input number with 4-8 digits to check it luck.\n");
                 str = Console.ReadLine();
-                if (str.Length % 2 != 0)
+                if (str.Length % 2 != 0 && str.Length!=3)
                     str = 0 + str;
                 if (Regex.IsMatch(str, @"^\d{4,8}$"))
                 {
